@@ -1,5 +1,6 @@
 package com.nu1silva.cybernode.util;
 
+import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.PrintWriter;
 import java.io.UnsupportedEncodingException;
@@ -24,6 +25,22 @@ public class FileCommander {
             e.printStackTrace();
         } catch (UnsupportedEncodingException e) {
             e.printStackTrace();
+        }
+    }
+
+    /**
+     * Remove File Operation
+     * Removes a file with the path and name of the parameters.
+     *
+     * @param path
+     * @param fileName
+     */
+    public void RemoveFile(String path, String fileName) {
+        try {
+            File file = new File(path + "/" + fileName);
+            file.delete();
+        } catch (Exception ex) {
+            ex.printStackTrace();
         }
     }
 
