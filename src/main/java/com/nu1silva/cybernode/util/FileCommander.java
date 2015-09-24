@@ -16,7 +16,7 @@ public class FileCommander {
      * @param encoding
      * @param content
      */
-    public void CreateFile(String path, String fileName, String encoding, String content) {
+    protected void CreateFile(String path, String fileName, String encoding, String content) {
         try {
             PrintWriter printWriter = new PrintWriter(path + "/" + fileName, encoding);
             printWriter.println(content);
@@ -35,7 +35,7 @@ public class FileCommander {
      * @param path
      * @param fileName
      */
-    public void RemoveFile(String path, String fileName) {
+    protected void RemoveFile(String path, String fileName) {
         try {
             File file = new File(path + "/" + fileName);
             file.delete();

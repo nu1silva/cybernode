@@ -11,7 +11,7 @@ public class DateTimeUtil {
      *
      * @return Current Timestamp
      */
-    public String getCurrentTimestamp() {
+    protected String getCurrentTimestamp() {
         DateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd hh:mm:ss");
         Date date = new Date();
         return dateFormat.format(date);

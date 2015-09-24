@@ -12,7 +12,7 @@ public class TestDateTimeUtil {
     DateTimeUtil dateTimeUtil = new DateTimeUtil();
 
     @Test(testName = "Current Timestamp Test")
-    public void testGetCurrentTimestamp() {
+    void testGetCurrentTimestamp() {
 
         DateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd hh:mm:ss");
         Date date = new Date();

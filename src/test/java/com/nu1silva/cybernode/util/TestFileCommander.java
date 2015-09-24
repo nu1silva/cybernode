@@ -10,7 +10,7 @@ public class TestFileCommander {
     FileCommander fileCommander = new FileCommander();
 
     @Test(testName = "Create File Test")
-    public void testCreateFile() {
+    void testCreateFile() {
         fileCommander.CreateFile("/tmp", "sample.txt", "UTF-8", "Sample File Text");
         File f = new File("/tmp/sample.txt");
 
@@ -18,7 +18,7 @@ public class TestFileCommander {
     }
 
     @Test(testName = "Remove File Test")
-    public void testRemoveFile() {
+    void testRemoveFile() {
         File f = new File("/tmp/sample.txt");
         fileCommander.RemoveFile("/tmp", "sample.txt");
 
